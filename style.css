@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -31,16 +31,12 @@ body {
 .container {
    display: flex;
    flex-direction: column;
-   max-width: 400px;
-   height: 580px;
+   max-width: 450px;
+   height: 620px;
    background-color: white;
    overflow: hidden;
    border-radius: 1.3rem;
 } 
-
-.background {
-    height: 200px;
-}
 
 .order-summary {
     display: flex;
@@ -51,8 +47,72 @@ body {
 
 .order-summary p {
   text-align: center;
-  width: 90%;
+  width: 70%;
   margin-top: 15px;
   color: var(--desaturated-blue);
- 
+  font-weight: 400;
+}
+
+.annual-plan {
+    display: flex;
+    background-color: var(--very-pale-blue);
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    align-items: center;
+    margin: 30px auto 0 auto;
+    padding: 10px;
+}
+
+.annual{
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    width: 40%;
+  
+}
+
+span {
+   color: var(--desaturated-blue);
+   font-weight: 400;
+}
+
+a {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.proceed {
+    background-color: var(--bright-blue);
+    color:hsl(225, 100%, 98%);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 110px;
+    border-radius: 10px;
+    border: none;
+}
+
+.proceed:hover {
+    background-color: var(--dark-blue);
+    
+}
+
+.cancel {
+    border: none;
+    background-color: white;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
 }
