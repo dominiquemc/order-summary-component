@@ -32,7 +32,7 @@ body {
    display: flex;
    flex-direction: column;
    max-width: 450px;
-   height: 620px;
+   height: 650px;
    background-color: white;
    overflow: hidden;
    border-radius: 1.3rem;
@@ -80,6 +80,7 @@ span {
 a {
     font-size: 0.9rem;
     font-weight: 500;
+    color: var(--bright-blue);
 }
 
 .buttons {
@@ -95,6 +96,7 @@ a {
     font-weight: 700;
     font-size: 1rem;
     padding: 15px 110px;
+    margin-bottom: 30px;
     border-radius: 10px;
     border: none;
 }
@@ -110,7 +112,7 @@ a {
     color: var(--desaturated-blue);
     font-weight: 700;
     font-size: 0.9rem;
-    margin-top: 20px;
+    
 }
 
 .cancel:hover {
