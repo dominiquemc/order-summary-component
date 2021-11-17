@@ -7,37 +7,34 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
 <main>
   <div class="container">
-    <img src="images/illustration-hero.svg">
-  <h2>Order Summary</h2>
-
-  <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!</p>
-
-  <img src="images/icon-music.svg">
-  <p>Annual Plan</p>
-  <p>$59.99/year</p>
-
- <p>Change</p> 
-
- <button>Proceed to Payment</button> 
-  <button>Cancel Order</button>
-</div>
+    <div class="hero-header">
+      <img class="background" src="images/illustration-hero.svg" alt="music header">
+    </div>
+    <!--End of hero-header with image-->
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <!--Another div for annual plan but still contained in the order-summary class-->
+      <div class="annual-plan">
+        <img src="images/icon-music.svg" alt="music icon">
+        <p class="annual">Annual Plan</p>
+        <p class="price">$59.99/year</p>
+        <a href="#">Change</a>
+      </div>
+      <!--End of order-summary class-->
+      <div class="buttons">
+      <button class="proceed">Proceed to Payment</button>
+      <button class="cancel">Cancel Order</button>
+      <!--End of buttons class-->
+    </div>
+    </div>
 </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>
